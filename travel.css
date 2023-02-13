@@ -47,13 +47,20 @@ main {
 header {
     width: 1160px;
     margin: 47px auto 0;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero-left {
     width: 630px;
     /* border: 1px solid red; */
     padding-right: 83px;
+    /* border: #df6951; */
+    /* border: 2px dashed red; */
+    position: relative;
+    left: 0;
+    z-index: -2;
 }
 
 .hero-text {
@@ -71,6 +78,7 @@ header {
     box-shadow: 4px 4px 5px rgba(32, 24, 7, 0.2);
     border-radius: 10px;
     color: #FFFFFF;
+
 }
 
 .hero-right-btn {
@@ -80,4 +88,93 @@ header {
     box-shadow: 4px 4px 5px rgba(32, 24, 7, 0.2);
     border-radius: 10px;
     margin-left: 44px;
+}
+
+.hero-section {
+    display: flex;
+    position: relative;
+    height: 95vh;
+    align-items: center;
+}
+
+.hero-right {
+    /* border: dashed red; */
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    
+}
+
+.buttom-services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+
+}
+
+.small-heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #5E6282;
+}
+
+.big-heading {
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #14183E;
+}
+
+.services-section {
+    padding-top: 105px;
+    position: relative;
+
+}
+
+.design {
+    position: absolute;
+    top: 105px;
+    right: -65px;
+
+}
+
+.card {
+    width: 267px;
+    height: 314px;
+    /* border: 1px solid red; */
+    padding: 44px 42px;
+    border-radius: 36px;
+    box-shadow: 2px 4px 4px gray;
+
+
+}
+
+.card-p-text {
+    text-align: justify;
+}
+
+.card-h-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #1E1D4C;
+    margin: 34px 0 15px;
+    text-align: center;
+}
+
+.card-ing{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
 }
